@@ -1,9 +1,7 @@
 Little mbta offline producers documentation!
 ============================================
 
-mbta mbta mbta
-old doc  
-new doc
+
 `mbta v4 doc <https://git.ligo.org/virgo/virgoapp/mbta/-/blob/v4r34p4/doc/Mbta.pdf>`_
 
 `mbta v5 doc <https://git.ligo.org/virgo/virgoapp/mbta/-/blob/master/doc/MBTA.pdf>`_
