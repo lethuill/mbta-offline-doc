@@ -16,7 +16,7 @@ https://computing.docs.ligo.org/guide/auth/scitokens/
 
    source /cvmfs/software.igwn.org/conda/etc/profile.d/conda.sh
    conda activate igwn-py310 > /dev/null 2>&1
-   htgettoken --audience https://datafind.ligo.org --scope gwdatafind.read
+   htgettoken --vaultserver vault.ligo.org --audience https://datafind.ligo.org --scope gwdatafind.read
    gw_data_find -r datafind.ligo.org -o H -t H1_HOFT_C00 --latest
 
 ``-y`` to find available type
