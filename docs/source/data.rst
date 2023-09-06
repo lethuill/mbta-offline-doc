@@ -10,6 +10,8 @@ The GWDataFind service allows users to query for the location of Gravitational-W
 
 https://gwdatafind.readthedocs.io/
 
+https://computing.docs.ligo.org/guide/auth/scitokens/
+
 .. code-block:: console
 
    source /cvmfs/software.igwn.org/conda/etc/profile.d/conda.sh
