@@ -50,36 +50,47 @@ https://gwdatafind.readthedocs.io/
 O4 data
 ------------------
 
-RAW DATA:
-at LLO: /archive/frames/O3/raw/L1
-at LHO: /archive/frames/O3/raw/H1
-at Cascina: /data/archive/rawdata 
-at CC: /hpss/in2p3.fr/group/virgo/Run/O3/raw/
-at Cascina ER15: /data/dev/hrec/V1Online
+**Raw data**
+
+.. code-block:: console
+
+   at LLO: /archive/frames/O3/raw/L1
+   at LHO: /archive/frames/O3/raw/H1
+   at Cascina: /data/archive/rawdata 
+   at CC: /hpss/in2p3.fr/group/virgo/Run/O3/raw/
+   at Cascina ER15: /data/dev/hrec/V1Online
 
 
-ONLINE LOW LATENCY FRAMES:
-datasets: H1_llhoft, L1_llhoft, V1_llhoft
-at CIT:
-   /dev/shm/kafka/   (5 min buffer)
-   /ifocache/llcache/kafka/  (1 month buffer)
+**Low latency frames**
 
-at Cascina: ~1 week buffer /data/dev/hrec  => H1KafkaOnline, L1KafkaOnline, V1Online
-                    ~2 months buffer /data/prod/hrec/H1Online L1Online V1Online
+.. code-block:: console
 
-
-Aggregated frames:
-datasets: H1_HOFT_C00, L1_HOFT_C00, V1???
-at LLO, LHO, CIT:
-    /archive/frames   /O3 /ER15 /O4
-    aggregated h(t) => /ifocache/frames/O4/hoft_C00/
+   datasets: H1_llhoft, L1_llhoft, V1_llhoft
+   at CIT:
+      /dev/shm/kafka/   (5 min buffer)
+      /ifocache/llcache/kafka/  (1 month buffer)
+   at Cascina: ~1 week buffer /data/dev/hrec  => H1KafkaOnline, L1KafkaOnline, V1Online
+               ~2 months buffer /data/prod/hrec/H1Online L1Online V1Online
 
 
-AR Frames:
-Datatsets: H1_HOFT_C00_AR, L1_HOFT_C00_AR
-at CIT: 
-   /ifocache/frames/O4/hoft_C00_AR
-   /ceph/mirror/frames/O4/hoft_C00_AR
-   /archive/frames/O4/hoft_C00_AR
-   /cvmfs/ligo.storage.igwn.org/igwn/ligo/frames/O4/hoft_C00_AR
+**Aggregated frames**
 
+.. code-block:: console
+
+   datasets: H1_HOFT_C00, L1_HOFT_C00, V1???
+   at LLO, LHO, CIT:
+       /archive/frames   /O3 /ER15 /O4
+       aggregated h(t) => /ifocache/frames/O4/hoft_C00/
+
+
+**Analysis ready frames**
+
+.. code-block:: console
+
+   Datatsets: H1_HOFT_C00_AR, L1_HOFT_C00_AR
+   at CIT: 
+      /ifocache/frames/O4/hoft_C00_AR
+      /ceph/mirror/frames/O4/hoft_C00_AR
+      /archive/frames/O4/hoft_C00_AR
+      /cvmfs/ligo.storage.igwn.org/igwn/ligo/frames/O4/hoft_C00_AR
+   
