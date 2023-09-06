@@ -13,5 +13,6 @@ Contents
 .. toctree::
 
    impatient
+   api
    general
    data

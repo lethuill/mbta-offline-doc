@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'Doc for MBTA offline prod'
+project = 'mbta offline prod'
 copyright = '2023, ML'
 author = 'morgan.lethuillier@ligo.org'
 
@@ -17,6 +17,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'myst_parser'
 ]
 
 intersphinx_mapping = {
