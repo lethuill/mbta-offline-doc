@@ -1,4 +1,4 @@
-# How to modify the doc
+### How to modify the doc
 
 1.Clone the git project:
 ```
@@ -11,11 +11,11 @@ cd mbta-offline-doc
 git remote -v
 ```
 
-1.Manage the project at readthedocs:
+2.Manage the project at readthedocs:
 https://readthedocs.org/projects/mbta-offline-doc/
 
-1.Look at the results:
+3.Look at the results:
 https://mbta-offline-doc.readthedocs.io/en/latest/
 
-1.Read the tutorial here:
+4.Read the tutorial here:
 https://docs.readthedocs.io/en/stable/tutorial/
