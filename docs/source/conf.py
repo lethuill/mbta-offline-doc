@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'mbta offline prod'
+project = 'MBTA offline prod'
 copyright = '2023, ML'
 author = 'morgan.lethuillier@ligo.org'
 
@@ -30,6 +30,9 @@ templates_path = ['_templates']
 # -- Options for HTML output
 
 html_theme = 'sphinx_rtd_theme'
+html_show_sphinx = False
+html_show_copyright = False
+html_show_sourcelink = False
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
