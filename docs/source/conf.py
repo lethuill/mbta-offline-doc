@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Doc for MBTA offline prod'
+copyright = '2023, ML'
+author = 'morgan.lethuillier@ligo.org'
 
 release = '0.1'
 version = '0.1.0'
