@@ -1,5 +1,5 @@
-Usage
-=====
+Recipe for impatient user
+========================
 
 .. _installation:
 
