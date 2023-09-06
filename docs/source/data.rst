@@ -3,15 +3,17 @@ Where's the data Lebowski
 
 .. _data:
 
-gwdatafind
-----------
+gw_data_find
+------------
 
-The GWDataFind service allows users to query for the location of Gravitational-Wave data files containing data associated with gravitational-wave detectors.
+The GWDataFind service allows users to query for the location of Gravitational-Wave data files. Scitokens authentification is required to access the datafind server.
 
 https://gwdatafind.readthedocs.io/
 
 .. code-block:: console
 
+   source /cvmfs/software.igwn.org/conda/etc/profile.d/conda.sh
+   conda activate igwn-py310 > /dev/null 2>&1
    htgettoken --audience https://datafind.ligo.org --scope gwdatafind.read
    gw_data_find -r datafind.ligo.org -o H -t H1_HOFT_C00 --latest
 
@@ -69,6 +71,7 @@ O4 data
    at CIT:
       /dev/shm/kafka/   (5 min buffer)
       /ifocache/llcache/kafka/  (1 month buffer)
+   
    at Cascina: ~1 week buffer /data/dev/hrec  => H1KafkaOnline, L1KafkaOnline, V1Online
                ~2 months buffer /data/prod/hrec/H1Online L1Online V1Online
 
