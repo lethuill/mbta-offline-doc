@@ -64,7 +64,9 @@ Raw data
    at CIT, LHO, LLO:
       /archive/frames/O4/raw
       /ceph/mirror/frames/O4/raw
+
    at LHO: /archive/frames/O4/raw/H1
+
    at LLO: /archive/frames/O4/raw/L1
 
 
@@ -87,7 +89,7 @@ datasets: ``H1_llhoft``, ``L1_llhoft``, ``V1Online`` (before 2023-JUN-13) or ``H
 Aggregated frames
 ^^^^^^^^^^^^^^^^^^
 
-datasets: ``H1_HOFT_C00``, ``L1_HOFT_C00``
+datasets: ``H1_HOFT_C00``, ``L1_HOFT_C00``, ``V1Online`` (before 2023-JUN-13) or ``HoftOnline`` (after 2023-JUN-13)
 
 .. code-block:: console
 
@@ -100,11 +102,12 @@ datasets: ``H1_HOFT_C00``, ``L1_HOFT_C00``
       /ifocache/frames/O4/hoft_C00
       /ceph/mirror/frames/O4/hoft_C00
       /archive/frames/O4/hoft_C00
-     
 
-at LLO, LHO, CIT:
-       /archive/frames   /O3 /ER15 /O4
-       aggregated h(t) => /ifocache/frames/O4/hoft_C00/
+   at LLO, LHO:
+      /archive/frames/O4/hoft_C00
+
+   at Cascina:
+      /data/prod/hrec/ H1Online L1Online V1Online (~2 months buffer)     
 
 
 Analysis ready frames
@@ -114,11 +117,13 @@ datasets: ``H1_HOFT_C00_AR``, ``L1_HOFT_C00_AR``, ``V1Online`` (before 2023-JUN-
 
 .. code-block:: console
 
+   on cvmfs:
+      /cvmfs/ligo.storage.igwn.org/igwn/ligo/frames/O4/hoft_C00_AR
+
    at CIT: 
       /ifocache/frames/O4/hoft_C00_AR
       /ceph/mirror/frames/O4/hoft_C00_AR
       /archive/frames/O4/hoft_C00_AR
-      /cvmfs/ligo.storage.igwn.org/igwn/ligo/frames/O4/hoft_C00_AR
    
 
 O3 data
