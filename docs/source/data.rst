@@ -114,7 +114,7 @@ datasets: ``H1_HOFT_C00``, ``L1_HOFT_C00``, ``V1Online`` (before 2023-JUN-13) or
 Analysis ready frames
 ^^^^^^^^^^^^^^^^^^^^^
 
-datasets: ``H1_HOFT_C00_AR``, ``L1_HOFT_C00_AR``, ``V1Online`` (before 2023-JUN-13) or ``HoftOnline`` (after 2023-JUN-13)
+datasets: ``H1_HOFT_C00_AR``, ``L1_HOFT_C00_AR``
 
 .. code-block:: console
 
