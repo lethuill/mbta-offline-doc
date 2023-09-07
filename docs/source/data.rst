@@ -69,9 +69,10 @@ O4 data
 
 **Low latency frames**
 
+datasets: ``H1_llhoft``, ``L1_llhoft``, ``V1Online`` (before 2023-JUN-13) or ``HoftOnline`` (after 2023-JUN-13)
+
 .. code-block:: console
 
-   datasets: H1_llhoft, L1_llhoft, V1_llhoft
    at CIT:
       /dev/shm/kafka/   (5 min buffer)
       /ifocache/llcache/kafka/  (1 month buffer)
@@ -82,9 +83,11 @@ O4 data
 
 **Aggregated frames**
 
+datasets: ``H1_HOFT_C00``, ``L1_HOFT_C00``
+
 .. code-block:: console
 
-   datasets: H1_HOFT_C00, L1_HOFT_C00, V1???
+   datasets: , , V1???
    at LLO, LHO, CIT:
        /archive/frames   /O3 /ER15 /O4
        aggregated h(t) => /ifocache/frames/O4/hoft_C00/
@@ -92,9 +95,10 @@ O4 data
 
 **Analysis ready frames**
 
+datasets: ``H1_HOFT_C00_AR``, ``L1_HOFT_C00_AR``, ``V1Online`` (before 2023-JUN-13) or ``HoftOnline`` (after 2023-JUN-13)
+
 .. code-block:: console
 
-   Datatsets: H1_HOFT_C00_AR, L1_HOFT_C00_AR
    at CIT: 
       /ifocache/frames/O4/hoft_C00_AR
       /ceph/mirror/frames/O4/hoft_C00_AR
@@ -116,8 +120,6 @@ O3 data
 
 **Low latency frames**
 
-datasets: ``H1_llhoft``, ``L1_llhoft``, ``V1Online`` (before 2023-JUN-13) or ``HoftOnline`` (after 2023-JUN-13)
-
 .. code-block:: console
 
    at CIT:
@@ -132,7 +134,6 @@ datasets: ``H1_llhoft``, ``L1_llhoft``, ``V1Online`` (before 2023-JUN-13) or ``H
 
 .. code-block:: console
 
-   datasets: H1_HOFT_C00, L1_HOFT_C00, V1???
    at LLO, LHO, CIT:
        /archive/frames   /O3 /ER15 /O4
        aggregated h(t) => /ifocache/frames/O4/hoft_C00/
@@ -142,7 +143,6 @@ datasets: ``H1_llhoft``, ``L1_llhoft``, ``V1Online`` (before 2023-JUN-13) or ``H
 
 .. code-block:: console
 
-   Datatsets: H1_HOFT_C00_AR, L1_HOFT_C00_AR
    at CIT: 
       /ifocache/frames/O4/hoft_C00_AR
       /ceph/mirror/frames/O4/hoft_C00_AR
