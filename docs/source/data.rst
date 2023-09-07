@@ -135,16 +135,28 @@ Raw data
 
 .. code-block:: console
 
+   at CIT: /archive/frames/O3/raw
    at LLO: /archive/frames/O3/raw/L1
    at LHO: /archive/frames/O3/raw/H1
    at Cascina: /data/archive/rawdata 
-   at CC: /hpss/in2p3.fr/group/virgo/Run/O3/raw/
+   at CC: /hpss/in2p3.fr/group/virgo/Run/O3/raw
 
 Aggregated frames
 ^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 
-   at LLO, LHO, CIT:
-       /archive/frames   /O3 /ER15 /O4
-       aggregated h(t) => /ifocache/frames/O4/hoft_C00/
+   on cvmfs:
+      /cvmfs/ligo.storage.igwn.org/igwn/ligo/frames/O3/hoft_C01_clean_sub60Hz
+      /cvmfs/ligo.storage.igwn.org/igwn/ligo/frames/O3/V1Online
+      /cvmfs/ligo.storage.igwn.org/igwn/ligo/frames/O3/V1O3Repro1A
+
+   at CIT:
+      /archive/frames/O3/hoft_C01_clean_sub60Hz
+      /archive/frames/O3/V1Online
+      /archive/frames/O3/V1O3Repro1A
+      /ceph/mirror/frames/O3/hoft_C01_clean_sub60Hz
+      /ceph/mirror/frames/O3/V1Online
+      /ceph/mirror/frames/O3/V1O3Repro1A
+      /ifocache/frames/O3
+
