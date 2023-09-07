@@ -44,7 +44,7 @@ https://computing.docs.ligo.org/guide/auth/scitokens/
 
 .. note::
 
-   Vigro h(t) name changed on Jun 13
+   Vigro h(t) name changed from V1Online to HoftOnline on Jun 13
 
 .. code-block:: console
 
