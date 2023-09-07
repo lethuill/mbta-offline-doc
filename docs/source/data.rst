@@ -24,22 +24,23 @@ https://computing.docs.ligo.org/guide/auth/scitokens/
 
 .. code-block:: console
 
-   gw_data_find -o V -y | grep -i hoft
-   gw_data_find -o V -y | grep -i online
+   python -m gwdatafind -r datafind.ligo.org  -o V -y | grep -i hoft
+   python -m gwdatafind -r datafind.ligo.org  -o V -y | grep -i online
+   python -m gwdatafind -r datafind.ligo.org  -o H -y | grep -i hoft
 
 
 ``-a`` to find time segments where a given type is available
 
 .. code-block:: console
 
-   gw_data_find -o L -t L1_HOFT_C00_AR -a
+   python -m gwdatafind -r datafind.ligo.org  -o L -t L1_HOFT_C00_AR -a
 
 
 ``-f`` to find location(s) of a file
 
 .. code-block:: console
 
-   gw_data_find -f L-L1_HOFT_C00_AR-1368974350-3058.gwf
+   python -m gwdatafind -r datafind.ligo.org  -f L-L1_HOFT_C00_AR-1368974350-3058.gwf
 
 .. note::
 
@@ -47,8 +48,8 @@ https://computing.docs.ligo.org/guide/auth/scitokens/
 
 .. code-block:: console
 
-   gw_data_find -o V -t V1Online --latest
-   gw_data_find -o V -t HoftOnline --latest
+   python -m gwdatafind -r datafind.ligo.org  -o V -t V1Online --latest
+   python -m gwdatafind -r datafind.ligo.org  -o V -t HoftOnline --latest
 
 
 
