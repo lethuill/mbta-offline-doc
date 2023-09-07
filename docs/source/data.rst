@@ -63,6 +63,7 @@ Raw data
 
    at CIT, LHO, LLO:
       /archive/frames/O4/raw
+      /ifocache/frames/O4/raw
       /ceph/mirror/frames/O4/raw
 
    at LHO: /archive/frames/O4/raw/H1
