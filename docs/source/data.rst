@@ -42,7 +42,7 @@ https://computing.docs.ligo.org/guide/auth/scitokens/
 
    python -m gwdatafind -r datafind.ligo.org  -f L-L1_HOFT_C00_AR-1368974350-3058.gwf
 
-.. note::
+.. warning::
 
    Vigro h(t) name changed from V1Online to HoftOnline on Jun 13
 
