@@ -128,7 +128,7 @@ datasets: ``H1_HOFT_C00_AR``, ``L1_HOFT_C00_AR``
 
 
 .. note::
-   at CIT, ``/archive/frames`` and ``/ifocache/frames`` are both fine to use for offline processing, they are just not guaranteed for low-latency processing. However, ``/ifocache/frames/O4/hoft_C00`` will soon go away in favor of a new ``/ceph/frames/O4/hoft_C00`` once additional stability testing is done on the new underlying Ceph filesystems at CIT. The new /ceph will be taking over in a few weeks with an order of magnitude more performance (speed and capacity).
+   at CIT, ``/archive/frames`` and ``/ifocache/frames`` are both fine to use for offline processing, they are just not guaranteed for low-latency processing. However, ``/ifocache/frames/O4/hoft_C00`` will soon go away in favor of a new ``/ceph/frames/O4/hoft_C00`` once additional stability testing is done on the new underlying Ceph filesystems at CIT. The new /ceph will be taking over with an order of magnitude more performance (speed and capacity).
 
  
 
