@@ -56,8 +56,8 @@ https://computing.docs.ligo.org/guide/auth/scitokens/
 O4 data
 ------------------
 
-**Raw data**
-
+Raw data
+^^^^^^^^
 .. code-block:: console
 
    at LLO: /archive/frames/O4/raw/L1
@@ -69,10 +69,7 @@ O4 data
 
 **Low latency frames**
 
-.. raw:: html
-    
-   <style> .font {font-family:'Courier New'} </style>
-   datasets: ``H1_llhoft``, ``L1_llhoft``, ``V1Online`` (before 2023-JUN-13) or ``HoftOnline`` (after 2023-JUN-13)
+datasets: ``H1_llhoft``, ``L1_llhoft``, ``V1Online`` (before 2023-JUN-13) or ``HoftOnline`` (after 2023-JUN-13)
 
 .. code-block:: console
 
