@@ -125,7 +125,12 @@ datasets: ``H1_HOFT_C00_AR``, ``L1_HOFT_C00_AR``
       /ifocache/frames/O4/hoft_C00_AR
       /ceph/mirror/frames/O4/hoft_C00_AR
       /archive/frames/O4/hoft_C00_AR
-   
+
+
+.. note::
+   at CIT, ``/archive/frames`` and ``/ifocache/frames`` are both fine to use for offline processing, they are just not guaranteed for low-latency processing. However, ``/ifocache/frames/O4/hoft_C00`` will soon go away in favor of a new ``/ceph/frames/O4/hoft_C00`` once additional stability testing is done on the new underlying Ceph filesystems at CIT. The new /ceph will be taking over in a few weeks with an order of magnitude more performance (speed and capacity).
+
+ 
 
 O3 data
 ------------------
@@ -139,7 +144,7 @@ Raw data
    at LLO: /archive/frames/O3/raw/L1
    at LHO: /archive/frames/O3/raw/H1
    at Cascina: /data/archive/rawdata 
-   at CC: /hpss/in2p3.fr/group/virgo/Run/O3/raw
+   at ccin2p3: /hpss/in2p3.fr/group/virgo/Run/O3/raw
 
 Aggregated frames
 ^^^^^^^^^^^^^^^^^
@@ -165,7 +170,4 @@ Aggregated frames
       /sps/virgo/USERS/mbta/O3/L1_hoft_C01_clean_sub60Hz
       /sps/virgo/USERS/mbta/O3/V1Online
       /sps/virgo/USERS/mbta/O3/V1O3Repro1A
-
-.. note::
-   at CIT, ``/archive/frames`` and ``/ifocache/frames`` are both fine to use for offline processing, they are just not guaranteed for low-latency processing. However, /ifocache/frames/O4/hoft_C00 will soon go away in favor of a new /ceph/frames/O4/hoft_C00 once additional stability testing is done on the new underlying Ceph filesystems at CIT. The new /ceph will be taking over in a few weeks with an order of magnitude more performance (speed and capacity)
 
