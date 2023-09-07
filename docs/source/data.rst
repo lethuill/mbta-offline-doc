@@ -12,7 +12,7 @@ https://gwdatafind.readthedocs.io/
 
 https://computing.docs.ligo.org/guide/auth/scitokens/
 
-.. code-block:: console
+.. code-block:: bash
 
    source /cvmfs/software.igwn.org/conda/etc/profile.d/conda.sh
    conda activate igwn-py310 > /dev/null 2>&1
