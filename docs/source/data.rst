@@ -140,19 +140,6 @@ Raw data
    at Cascina: /data/archive/rawdata 
    at CC: /hpss/in2p3.fr/group/virgo/Run/O3/raw/
 
-Low latency frames
-^^^^^^^^^^^^^^^^^^
-
-.. code-block:: console
-
-   at CIT:
-      /dev/shm/kafka/   (5 min buffer)
-      /ifocache/llcache/kafka/  (1 month buffer)
-   
-   at Cascina: ~1 week buffer /data/dev/hrec  => H1KafkaOnline, L1KafkaOnline, V1Online
-               ~2 months buffer /data/prod/hrec/H1Online L1Online V1Online
-
-
 Aggregated frames
 ^^^^^^^^^^^^^^^^^
 
@@ -161,15 +148,3 @@ Aggregated frames
    at LLO, LHO, CIT:
        /archive/frames   /O3 /ER15 /O4
        aggregated h(t) => /ifocache/frames/O4/hoft_C00/
-
-
-Analysis ready frames
-^^^^^^^^^^^^^^^^^^^^^
-
-.. code-block:: console
-
-   at CIT: 
-      /ifocache/frames/O4/hoft_C00_AR
-      /ceph/mirror/frames/O4/hoft_C00_AR
-      /archive/frames/O4/hoft_C00_AR
-      /cvmfs/ligo.storage.igwn.org/igwn/ligo/frames/O4/hoft_C00_AR
