@@ -15,5 +15,11 @@ Contents
 
    impatient
    general
+   install
    data
    slurm
+   cat1
+   filtering
+   postfiltering
+   macros
+
