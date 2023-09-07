@@ -61,11 +61,11 @@ Raw data
 
 .. code-block:: console
 
-   at LLO: /archive/frames/O4/raw/L1
+   at CIT, LHO, LLO:
+      /archive/frames/O4/raw
+      /ceph/mirror/frames/O4/raw
    at LHO: /archive/frames/O4/raw/H1
-   at Cascina: /data/archive/rawdata 
-   at CC: /hpss/in2p3.fr/group/virgo/Run/O3/raw/
-   at Cascina ER15: /data/dev/hrec/V1Online
+   at LLO: /archive/frames/O4/raw/L1
 
 
 Low latency frames
@@ -75,12 +75,13 @@ datasets: ``H1_llhoft``, ``L1_llhoft``, ``V1Online`` (before 2023-JUN-13) or ``H
 
 .. code-block:: console
 
-   at CIT:
+   at CIT, LHO, LLO:
       /dev/shm/kafka/   (5 min buffer)
       /ifocache/llcache/kafka/  (1 month buffer)
    
-   at Cascina: ~1 week buffer /data/dev/hrec  => H1KafkaOnline, L1KafkaOnline, V1Online
-               ~2 months buffer /data/prod/hrec/H1Online L1Online V1Online
+   at Cascina:
+      /data/dev/hrec/ H1KafkaOnline L1KafkaOnline V1Online (~1 week buffer)
+      /data/prod/hrec/ H1Online L1Online V1Online (~2 months buffer)
 
 
 Aggregated frames
@@ -90,8 +91,18 @@ datasets: ``H1_HOFT_C00``, ``L1_HOFT_C00``
 
 .. code-block:: console
 
-   datasets: , , V1???
-   at LLO, LHO, CIT:
+   on cvmfs:
+      /cvmfs/ligo.storage.igwn.org/igwn/ligo/frames/O4/hoft_C00
+      /cvmfs/virgo.storage.igwn.org/igwn/virgo/frames/O4/V1Online (before Jun 13)
+      /cvmfs/virgo.storage.igwn.org/igwn/virgo/frames/O4/HoftOnline (after Jun 13)
+
+   at CIT: 
+      /ifocache/frames/O4/hoft_C00
+      /ceph/mirror/frames/O4/hoft_C00
+      /archive/frames/O4/hoft_C00
+     
+
+at LLO, LHO, CIT:
        /archive/frames   /O3 /ER15 /O4
        aggregated h(t) => /ifocache/frames/O4/hoft_C00/
 
