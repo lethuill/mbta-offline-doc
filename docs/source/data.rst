@@ -160,3 +160,12 @@ Aggregated frames
       /ceph/mirror/frames/O3/V1O3Repro1A
       /ifocache/frames/O3
 
+   at ccin2p3:
+      /sps/virgo/USERS/mbta/O3/H1_hoft_C01_clean_sub60Hz
+      /sps/virgo/USERS/mbta/O3/L1_hoft_C01_clean_sub60Hz
+      /sps/virgo/USERS/mbta/O3/V1Online
+      /sps/virgo/USERS/mbta/O3/V1O3Repro1A
+
+.. note::
+   at CIT, ``/archive/frames`` and ``/ifocache/frames`` are both fine to use for offline processing, they are just not guaranteed for low-latency processing. However, /ifocache/frames/O4/hoft_C00 will soon go away in favor of a new /ceph/frames/O4/hoft_C00 once additional stability testing is done on the new underlying Ceph filesystems at CIT. The new /ceph will be taking over in a few weeks with an order of magnitude more performance (speed and capacity)
+
