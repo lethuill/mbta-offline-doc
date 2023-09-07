@@ -54,10 +54,11 @@ https://computing.docs.ligo.org/guide/auth/scitokens/
 
 
 O4 data
-------------------
+-------
 
 Raw data
 ^^^^^^^^
+
 .. code-block:: console
 
    at LLO: /archive/frames/O4/raw/L1
@@ -67,7 +68,8 @@ Raw data
    at Cascina ER15: /data/dev/hrec/V1Online
 
 
-**Low latency frames**
+Low latency frames
+^^^^^^^^^^^^^^^^^^
 
 datasets: ``H1_llhoft``, ``L1_llhoft``, ``V1Online`` (before 2023-JUN-13) or ``HoftOnline`` (after 2023-JUN-13)
 
@@ -81,7 +83,8 @@ datasets: ``H1_llhoft``, ``L1_llhoft``, ``V1Online`` (before 2023-JUN-13) or ``H
                ~2 months buffer /data/prod/hrec/H1Online L1Online V1Online
 
 
-**Aggregated frames**
+Aggregated frames
+^^^^^^^^^^^^^^^^^^
 
 datasets: ``H1_HOFT_C00``, ``L1_HOFT_C00``
 
@@ -93,7 +96,8 @@ datasets: ``H1_HOFT_C00``, ``L1_HOFT_C00``
        aggregated h(t) => /ifocache/frames/O4/hoft_C00/
 
 
-**Analysis ready frames**
+Analysis ready frames
+^^^^^^^^^^^^^^^^^^^^^
 
 datasets: ``H1_HOFT_C00_AR``, ``L1_HOFT_C00_AR``, ``V1Online`` (before 2023-JUN-13) or ``HoftOnline`` (after 2023-JUN-13)
 
@@ -109,7 +113,8 @@ datasets: ``H1_HOFT_C00_AR``, ``L1_HOFT_C00_AR``, ``V1Online`` (before 2023-JUN-
 O3 data
 ------------------
 
-**Raw data**
+Raw data
+^^^^^^^^
 
 .. code-block:: console
 
@@ -118,7 +123,8 @@ O3 data
    at Cascina: /data/archive/rawdata 
    at CC: /hpss/in2p3.fr/group/virgo/Run/O3/raw/
 
-**Low latency frames**
+Low latency frames
+^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 
@@ -130,7 +136,8 @@ O3 data
                ~2 months buffer /data/prod/hrec/H1Online L1Online V1Online
 
 
-**Aggregated frames**
+Aggregated frames
+^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 
@@ -139,7 +146,8 @@ O3 data
        aggregated h(t) => /ifocache/frames/O4/hoft_C00/
 
 
-**Analysis ready frames**
+Analysis ready frames
+^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 
