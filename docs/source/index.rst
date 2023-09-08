@@ -11,7 +11,15 @@ Contents
 --------
 
 .. toctree::
+   :maxdepth: 2
 
    impatient
    general
+   install
    data
+   slurm
+   cat1
+   filtering
+   postfiltering
+   macros
+

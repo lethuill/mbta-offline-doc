@@ -42,9 +42,9 @@ https://computing.docs.ligo.org/guide/auth/scitokens/
 
    python -m gwdatafind -r datafind.ligo.org  -f L-L1_HOFT_C00_AR-1368974350-3058.gwf
 
-.. note::
+.. warning::
 
-   Vigro h(t) name changed on Jun 13
+   Vigro h(t) name changed from V1Online to HoftOnline on Jun 13
 
 .. code-block:: console
 
@@ -54,50 +54,120 @@ https://computing.docs.ligo.org/guide/auth/scitokens/
 
 
 O4 data
-------------------
+-------
 
-**Raw data**
-
-.. code-block:: console
-
-   at LLO: /archive/frames/O3/raw/L1
-   at LHO: /archive/frames/O3/raw/H1
-   at Cascina: /data/archive/rawdata 
-   at CC: /hpss/in2p3.fr/group/virgo/Run/O3/raw/
-   at Cascina ER15: /data/dev/hrec/V1Online
-
-
-**Low latency frames**
+Raw data
+^^^^^^^^
 
 .. code-block:: console
 
-   datasets: H1_llhoft, L1_llhoft, V1_llhoft
-   at CIT:
+   at CIT, LHO, LLO:
+      /archive/frames/O4/raw
+      /ifocache/frames/O4/raw
+      /ceph/mirror/frames/O4/raw
+
+   at LHO: /archive/frames/O4/raw/H1
+
+   at LLO: /archive/frames/O4/raw/L1
+
+
+Low latency frames
+^^^^^^^^^^^^^^^^^^
+
+datasets: ``H1_llhoft``, ``L1_llhoft``, ``V1Online`` (before 2023-JUN-13) or ``HoftOnline`` (after 2023-JUN-13)
+
+.. code-block:: console
+
+   at CIT, LHO, LLO:
       /dev/shm/kafka/   (5 min buffer)
       /ifocache/llcache/kafka/  (1 month buffer)
    
-   at Cascina: ~1 week buffer /data/dev/hrec  => H1KafkaOnline, L1KafkaOnline, V1Online
-               ~2 months buffer /data/prod/hrec/H1Online L1Online V1Online
+   at Cascina:
+      /data/dev/hrec/ H1KafkaOnline L1KafkaOnline V1Online (~1 week buffer)
+      /data/prod/hrec/ H1Online L1Online V1Online (~2 months buffer)
 
 
-**Aggregated frames**
+Aggregated frames
+^^^^^^^^^^^^^^^^^^
 
-.. code-block:: console
-
-   datasets: H1_HOFT_C00, L1_HOFT_C00, V1???
-   at LLO, LHO, CIT:
-       /archive/frames   /O3 /ER15 /O4
-       aggregated h(t) => /ifocache/frames/O4/hoft_C00/
-
-
-**Analysis ready frames**
+datasets: ``H1_HOFT_C00``, ``L1_HOFT_C00``, ``V1Online`` (before 2023-JUN-13) or ``HoftOnline`` (after 2023-JUN-13)
 
 .. code-block:: console
 
-   Datatsets: H1_HOFT_C00_AR, L1_HOFT_C00_AR
+   on cvmfs:
+      /cvmfs/ligo.storage.igwn.org/igwn/ligo/frames/O4/hoft_C00
+      /cvmfs/virgo.storage.igwn.org/igwn/virgo/frames/O4/V1Online (before Jun 13)
+      /cvmfs/virgo.storage.igwn.org/igwn/virgo/frames/O4/HoftOnline (after Jun 13)
+
+   at CIT: 
+      /ifocache/frames/O4/hoft_C00
+      /ceph/mirror/frames/O4/hoft_C00
+      /archive/frames/O4/hoft_C00
+
+   at LLO, LHO:
+      /archive/frames/O4/hoft_C00
+
+   at Cascina:
+      /data/prod/hrec/ H1Online L1Online V1Online (~2 months buffer)     
+
+
+Analysis ready frames
+^^^^^^^^^^^^^^^^^^^^^
+
+datasets: ``H1_HOFT_C00_AR``, ``L1_HOFT_C00_AR``
+
+.. code-block:: console
+
+   on cvmfs:
+      /cvmfs/ligo.storage.igwn.org/igwn/ligo/frames/O4/hoft_C00_AR
+
    at CIT: 
       /ifocache/frames/O4/hoft_C00_AR
       /ceph/mirror/frames/O4/hoft_C00_AR
       /archive/frames/O4/hoft_C00_AR
-      /cvmfs/ligo.storage.igwn.org/igwn/ligo/frames/O4/hoft_C00_AR
-   
+
+
+.. note::
+   at CIT, ``/archive/frames`` and ``/ifocache/frames`` are both fine to use for offline processing, they are just not guaranteed for low-latency processing. However, ``/ifocache/frames/O4/hoft_C00`` will soon go away in favor of a new ``/ceph/frames/O4/hoft_C00`` once additional stability testing is done on the new underlying Ceph filesystems at CIT. The new /ceph will be taking over with an order of magnitude more performance (speed and capacity).
+
+ 
+
+O3 data
+------------------
+
+Raw data
+^^^^^^^^
+
+.. code-block:: console
+
+   at CIT: /archive/frames/O3/raw
+   at LLO: /archive/frames/O3/raw/L1
+   at LHO: /archive/frames/O3/raw/H1
+   at Cascina: /data/archive/rawdata 
+   at ccin2p3: /hpss/in2p3.fr/group/virgo/Run/O3/raw
+
+Aggregated frames
+^^^^^^^^^^^^^^^^^
+
+.. code-block:: console
+
+   on cvmfs:
+      /cvmfs/ligo.storage.igwn.org/igwn/ligo/frames/O3/hoft_C01_clean_sub60Hz
+      /cvmfs/ligo.storage.igwn.org/igwn/ligo/frames/O3/V1Online
+      /cvmfs/ligo.storage.igwn.org/igwn/ligo/frames/O3/V1O3Repro1A
+
+   at CIT:
+      /archive/frames/O3/hoft_C01_clean_sub60Hz
+      /archive/frames/O3/V1Online
+      /archive/frames/O3/V1O3Repro1A
+      /ceph/mirror/frames/O3/hoft_C01_clean_sub60Hz
+      /ceph/mirror/frames/O3/V1Online
+      /ceph/mirror/frames/O3/V1O3Repro1A
+      /ifocache/frames/O3
+
+   at ccin2p3:
+      /sps/virgo/USERS/mbta/O3/H1_hoft_C01_clean_sub60Hz
+      /sps/virgo/USERS/mbta/O3/L1_hoft_C01_clean_sub60Hz
+      /sps/virgo/USERS/mbta/O3/V1Online
+      /sps/virgo/USERS/mbta/O3/V1O3Repro1A
+
