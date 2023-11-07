@@ -69,6 +69,9 @@ Raw data
    at LHO: /archive/frames/O4/raw/H1
 
    at LLO: /archive/frames/O4/raw/L1
+  
+   at Cascina: /data/rawdata/  (circular buffer over many subdirs)
+   (for instance, today data (7-NOV-2023) are in /data/rawdata/v36/1383/)
 
 
 Low latency frames
